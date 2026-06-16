@@ -34,6 +34,8 @@ NL  = \n | \r | \r\n
 
 /* operadores */
 
+"?" |
+":" |
 "+" |
 "-" |
 "*" | 
@@ -63,6 +65,8 @@ NL  = \n | \r | \r\n
 "&&"   { return Parser.AND; }
 "||"   {  return Parser.OR; }
 
+"++"   { return Parser.MM; }
+
 int    { return Parser.INT;     }
 float  { return Parser.FLOAT;   }
 bool   { return Parser.BOOL; }
@@ -71,6 +75,7 @@ main   { return Parser.MAIN; }
 write   { return Parser.WRITE; }
 read   { return Parser.READ; }
 while   { return Parser.WHILE; }
+for     { return Parser.FOR; }
 if   { return Parser.IF; }
 else   { return Parser.ELSE; }
 true   { return Parser.TRUE; }
