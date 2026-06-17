@@ -7,4 +7,13 @@ void main() {
     for(i = 1; i < n; i++) {
         write("i: ", i);
     }
+
+            if (i == 7) {
+            write("Loop encerrado com break em i = 7");
+            break;
+        }
+
+        if (i % 2 == 0) {
+            continue;
+        }
 }

@@ -67,19 +67,21 @@ NL  = \n | \r | \r\n
 
 "++"   { return Parser.MM; }
 
-int    { return Parser.INT;     }
-float  { return Parser.FLOAT;   }
-bool   { return Parser.BOOL; }
-void   { return Parser.VOID; }
-main   { return Parser.MAIN; }
-write   { return Parser.WRITE; }
-read   { return Parser.READ; }
-while   { return Parser.WHILE; }
-for     { return Parser.FOR; }
-if   { return Parser.IF; }
-else   { return Parser.ELSE; }
-true   { return Parser.TRUE; }
-false   { return Parser.FALSE; }
+int      { return Parser.INT;      }
+float    { return Parser.FLOAT;    }
+bool     { return Parser.BOOL;     }
+void     { return Parser.VOID;     }
+main     { return Parser.MAIN;     }
+write    { return Parser.WRITE;    }
+read     { return Parser.READ;     }
+while    { return Parser.WHILE;    }
+for      { return Parser.FOR;      }
+if       { return Parser.IF;       }
+else     { return Parser.ELSE;     }
+true     { return Parser.TRUE;     }
+false    { return Parser.FALSE;    }
+break    { return Parser.BREAK;    }
+continue { return Parser.CONTINUE; }
 
 
 
